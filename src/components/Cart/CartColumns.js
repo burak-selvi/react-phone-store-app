@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CartColumns() {
+export default function CartColumns() {
   return (
     <div className="container-fluid text-center d-none d-lg-block">
       <div className="row">
@@ -26,5 +26,3 @@ function CartColumns() {
     </div>
   );
 }
-
-export default CartColumns;

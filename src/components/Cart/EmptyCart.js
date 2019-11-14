@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-function EmptyCart() {
+export default function EmptyCart() {
   return (
     <div className="container mt-5">
       <div className="row">
@@ -9,7 +9,5 @@ function EmptyCart() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-export default EmptyCart;

@@ -1,7 +1,7 @@
 import React from 'react';
 import CartItem from './CartItem';
 
-function CartList({ value }) {
+export default function CartList({ value }) {
   const { cart } = value;
 
   return (
@@ -12,5 +12,3 @@ function CartList({ value }) {
     </div>
   );
 }
-
-export default CartList;

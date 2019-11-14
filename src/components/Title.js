@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Title = ({ name, title }) => {
+export default function Title({ name, title }) {
   return (
     <div className="row">
       <div className="col-10 mx-auto my-2 text-center text-title">
@@ -9,7 +9,5 @@ const Title = ({ name, title }) => {
         </h1>
       </div>
     </div>
-  )
+  );
 }
-
-export default Title;

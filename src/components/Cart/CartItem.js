@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-function CartItem({ item, value }) {
+export default function CartItem({ item, value }) {
   const { id, title, img, price, total, count } = item;
   const { increment, decrement, removeItem } = value;
   return (
@@ -37,5 +37,3 @@ function CartItem({ item, value }) {
     </div>
   );
 }
-
-export default CartItem;
