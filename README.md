@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Project Link
 
-You can directly access the project with this link: https://brkslv-react-phone-store.netlify.com
+You can directly access the project with this link: [Click for the project](https://brkslv-react-phone-store.netlify.com)
 
 ## Available Scripts
 
