@@ -14,7 +14,11 @@ export default function Modal() {
           return null;
         } else {
           return (
-            <ModalContainer>
+            <ModalContainer onClick={(e) => {
+              if (e.target.className === "row") {
+                closeModal();
+              }
+            }}>
               <div className="container">
                 <div className="row">
                   <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5">

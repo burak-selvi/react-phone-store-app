@@ -8,6 +8,7 @@ import Default from './components/Default';
 import Modal from './components/Modal';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Favorites from './components/Favorites';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path="/" exact component={ProductList} />
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
+          <Route path="/favorites" component={Favorites} />
           <Route component={Default} />
         </Switch>
         <Modal />

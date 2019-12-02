@@ -25,6 +25,11 @@ export default function Navbar() {
           my cart
           </ButtonContainer>
       </Link>
+      <Link to="/favorites" className="">
+        <ButtonContainer cart>
+          favorites
+          </ButtonContainer>
+      </Link>
     </NavWrapper>
   );
 }

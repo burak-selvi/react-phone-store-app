@@ -6,6 +6,7 @@ class ProductProvider extends Component {
   state = {
     products: [],
     detailProduct,
+    likedProducts: [],
     cart: [],
     modalOpen: false,
     modalProduct: detailProduct,
@@ -16,6 +17,14 @@ class ProductProvider extends Component {
 
   componentDidMount() {
     this.setProducts();
+  }
+
+  setLikedProducts = () => {
+    let tempProducts = [];
+    tempProducts = this.state.products.filter(product => product.isLiked);
+    this.setState({
+      likedProducts: tempProducts
+    });
   }
 
   setProducts = () => {
@@ -140,6 +149,21 @@ class ProductProvider extends Component {
     });
   }
 
+  toggleLike = id => {
+    let tempProducts = [...this.state.products];
+    const index = tempProducts.indexOf(this.getItem(id));
+    const product = tempProducts[index];
+    product.isLiked = !product.isLiked;
+    this.setState({
+      products: tempProducts
+    });
+    this.setLikedProducts();
+  }
+
+  removeFromFavorites = id => {
+    this.toggleLike(id);
+  }
+
   render() {
     return (
       <ProductContext.Provider
@@ -152,7 +176,9 @@ class ProductProvider extends Component {
           increment: this.increment,
           decrement: this.decrement,
           removeItem: this.removeItem,
-          clearCart: this.clearCart
+          clearCart: this.clearCart,
+          toggleLike: this.toggleLike,
+          removeFromFavorites: this.removeFromFavorites
         }}
       >
         {this.props.children}
