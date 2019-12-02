@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can directly access the project with this link: [Click for the project](https://brkslv-react-phone-store.netlify.com)
 
+<hr>
+
 ## Available Scripts
 
 In the project directory, you can run:
