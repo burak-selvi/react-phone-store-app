@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Phone Store App
+
+In this project, I use context for state management, styled-components and css for stying and general ReactJs concepts.
+
 ## Available Project Link
 
 You can directly access the project with this link: [Click for the project](https://brkslv-react-phone-store.netlify.com)
